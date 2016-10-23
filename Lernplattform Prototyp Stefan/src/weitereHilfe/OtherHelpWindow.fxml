@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="637.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="weitereHilfe.OtherHelpWindowController">
+	<children>
+		<Label alignment="CENTER" layoutX="102.0" layoutY="107.0" prefHeight="42.0" prefWidth="500" styleClass="fragenLabels" text="Diese könnten dir ebenfalls helfen:">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label fx:id="title1" layoutX="102.0" layoutY="200.0" prefHeight="26.0" prefWidth="532.0" styleClass="fragenLabels" text="Überschrift 1" />
+		<Label fx:id="title4" layoutX="102.0" layoutY="462.0" prefHeight="26.0" prefWidth="532.0" styleClass="fragenLabels" text="Überschrift 4" />
+		<Label fx:id="title2" layoutX="102.0" layoutY="289.0" prefHeight="26.0" prefWidth="532.0" styleClass="fragenLabels" text="Überschrift 2" />
+		<Label fx:id="title3" layoutX="102.0" layoutY="377.0" prefHeight="26.0" prefWidth="532.0" styleClass="fragenLabels" text="Überschrift 3" />
+      <Hyperlink fx:id="link1" layoutX="102.0" layoutY="231.0" onAction="#hyperlinkClicked" prefHeight="29.0" prefWidth="510.0" text="Hyperlink" />
+      <Hyperlink fx:id="link2" layoutX="102.0" layoutY="320.0" onAction="#hyperlinkClicked" prefHeight="29.0" prefWidth="510.0" text="Hyperlink" />
+      <Hyperlink fx:id="link3" layoutX="102.0" layoutY="408.0" onAction="#hyperlinkClicked" prefHeight="29.0" prefWidth="510.0" text="Hyperlink" />
+      <Hyperlink fx:id="link4" layoutX="102.0" layoutY="488.0" onAction="#hyperlinkClicked" prefHeight="29.0" prefWidth="510.0" text="Hyperlink" />
+	</children>
+</AnchorPane>

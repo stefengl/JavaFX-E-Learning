@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane prefHeight="780" prefWidth="1200.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="reihenfolge.ReihenfolgeController">
+	<children>
+		<Button fx:id="vorherigeButton" layoutX="642.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#vorherigeButtonClicked"
+			prefHeight="31.0" prefWidth="92.0" styleClass="fragenArtenButtons"
+			text="Vorherige" />
+		<Button fx:id="nächsteButton" styleClass="fragenArtenButtons"
+			layoutX="734.0" layoutY="735.0" mnemonicParsing="false"
+			onAction="#nächsteButtonClicked" prefHeight="31.0" prefWidth="92.0"
+			text="Nächste" />
+		<Label fx:id="subjectLabel" alignment="CENTER" layoutX="534.0"
+			layoutY="21.0" prefHeight="50.0" prefWidth="400.0" styleClass="fragenArtenLabels"
+			text="Fach">
+			<font>
+				<Font name="System Bold" size="20.0" />
+			</font>
+		</Label>
+		<ImageView fx:id="logoImage" fitHeight="96.0" fitWidth="92.0"
+			layoutX="344.0" layoutY="39.0" opacity="0.43" pickOnBounds="true"
+			preserveRatio="true" rotate="-6.3">
+			<image>
+				<Image url="@../logo/logo.png" />
+			</image>
+		</ImageView>
+		<Label fx:id="chapterLabel" alignment="CENTER" layoutX="534.0"
+			layoutY="71.0" prefHeight="50.0" prefWidth="400.0" styleClass="fragenArtenLabels"
+			text="Chapter">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Label>
+		<Label fx:id="questionLabel" styleClass="fragenLabels"
+			alignment="CENTER" layoutX="371.0" layoutY="149.0" prefHeight="92.0"
+			prefWidth="726.0" text="Bringe die Antworten in die richtige Reihenfolge!"
+			wrapText="true" />
+		<ListView fx:id="chapterListView" layoutY="1.0" prefHeight="780"
+			prefWidth="300.0" />
+		<Button fx:id="homeButton" layoutX="306.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#homeButtonClicked" styleClass="fragenArtenButtons"
+			text="Home" />
+		<Label fx:id="label1" layoutX="438.0" layoutY="270.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<Label fx:id="label2" layoutX="438.0" layoutY="330.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<Label fx:id="label3" layoutX="438.0" layoutY="390.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<Label fx:id="label4" layoutX="438.0" layoutY="450.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<Label fx:id="label5" layoutX="438.0" layoutY="510.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<Label fx:id="label6" layoutX="438.0" layoutY="570.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<ComboBox fx:id="antwort1" layoutX="337.0" layoutY="270.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<ComboBox fx:id="antwort2" layoutX="337.0" layoutY="330.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<ComboBox fx:id="antwort3" layoutX="337.0" layoutY="390.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<ComboBox fx:id="antwort4" layoutX="337.0" layoutY="450.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<ComboBox fx:id="antwort5" layoutX="337.0" layoutY="510.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<ComboBox fx:id="antwort6" layoutX="337.0" layoutY="570.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<ComboBox fx:id="antwort7" layoutX="337.0" layoutY="628.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<Label fx:id="label7" layoutX="438.0" layoutY="630.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<ComboBox fx:id="antwort8" layoutX="337.0" layoutY="688.0"
+			prefHeight="50.0" prefWidth="60.0" />
+		<Label fx:id="label8" layoutX="438.0" layoutY="690.0"
+			prefHeight="50.0" prefWidth="700.0" text="Antwortteil 1">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" />
+			</padding>
+		</Label>
+		<ProgressIndicator fx:id="prog" layoutX="1053.0"
+			layoutY="664.0" opacity="0.55" prefHeight="103.0" prefWidth="116.0"
+			progress="0.0" />
+		<Separator id="seperator" layoutX="296.0" layoutY="1.0"
+			orientation="VERTICAL" prefHeight="780.0" prefWidth="7.0" />
+
+	</children>
+</AnchorPane>

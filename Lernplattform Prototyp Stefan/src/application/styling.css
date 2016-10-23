@@ -1,0 +1,123 @@
+.root{
+	-fx-background-color: white;
+	-fx-font-family: 'sans-serif';	
+	}
+
+.check-box .box{
+	-fx-background-color: lightblue ; 
+}
+
+.check-box:hover .box{
+	-fx-background-color: aliceblue;
+}
+
+.check-box:armed .box{
+	-fx-background-color: navy;
+}
+
+
+.label{
+	-fx-text-fill: black;
+}
+
+#seperator {
+	-fx-background-color: lightsteelblue;
+	-fx-pref-width: 2.0px;
+}
+
+
+#startingWindowComboBox {
+	-fx-background-color: aliceblue ; 
+	-fx-border-color: lightsteelblue;
+	-fx-border-radius: 6.0px;
+	-fx-alignment: center ;
+}
+
+#startingWindowComboBox .list-cell {
+	-fx-background-color: aliceblue;
+	-fx-background-insets: 0.0px, 2.0px;
+	-fx-text-fill: black;
+	-fx-alignment: center;
+	-fx-font-style: italic;
+}
+
+#startingWindowComboBox .list-cell:hover{
+	-fx-text-fill: green;
+}
+
+
+.combo-box {
+	-fx-background-color: aliceblue; 
+	-fx-border-radius: 6.0px;
+	-fx-alignment: center ;
+}
+
+.list-view {
+	-fx-background-color: aliceblue;
+	-fx-background-radius: 4.0px;
+	-fx-border-width:0.5;
+}
+
+.list-cell{
+	-fx-padding: 6.0px;
+	-fx-background-color: aliceblue;
+	-fx-background-insets: 0.0px, 2.0px;
+	-fx-text-fill: black;
+	-fx-wrap-text: true;
+}
+
+.list-cell:empty{
+	-fx-padding: 2.0px ;
+	-fx-background-color: transparent ;
+	-fx-background-insets: 0.0;
+}
+
+.list-cell:hover{
+	-fx-text-fill: red;
+}
+
+
+.startingWindowButtons {
+	-fx-background-color: lightblue;
+	-fx-border-color: lightsteelblue;
+	-fx-border-radius: 6.0px;
+}  
+
+.fragenArtenButtons {
+	-fx-background-color: lightblue;
+	-fx-border-color: lightsteelblue;
+	-fx-border-radius: 4.0px;
+}
+
+.fragenArtenButtons:armed {
+	-fx-background-color: lightgreen;
+	-fx-border-color: lightsteelblue;
+	-fx-border-radius: 4.0px;
+}
+
+.fragenArtenLabels {
+	-fx-text-fill: #3e96ad;
+	-fx-font-family: 'sans-serif'
+	}
+	
+.fragenLabels {
+	-fx-font-size: 18.0px;
+	-fx-font-weight: bold;
+	-fx-text-fill: navy ;
+}
+
+.wahrFalschButtons {
+	-fx-background-color: lightblue;
+	-fx-border-color: lightsteelblue;
+	-fx-border-radius: 6.0px;
+}
+
+.wahrFalschButtons:armed {
+	-fx-background-color: lightgreen;
+	-fx-border-color: lightsteelblue;
+	-fx-border-radius: 6.0px;
+}
+
+.progress-indicator {
+	-fx-progress-color: aquamarine;
+}

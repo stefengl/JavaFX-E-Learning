@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="780" prefWidth="1200.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="lueckentext.LueckentextController">
+	<children>
+		<Button fx:id="vorherigeButton" layoutX="642.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#vorherigeButtonClicked"
+			prefHeight="31.0" prefWidth="92.0" styleClass="fragenArtenButtons"
+			text="Vorherige" />
+		<Button fx:id="nächsteButton" layoutX="734.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#nächsteButtonClicked" prefHeight="31.0"
+			prefWidth="92.0" styleClass="fragenArtenButtons" text="Nächste" />
+		<Label fx:id="subjectLabel" alignment="CENTER" layoutX="534.0"
+			layoutY="21.0" prefHeight="50.0" prefWidth="400.0" styleClass="fragenArtenLabels"
+			text="Fach">
+			<font>
+				<Font name="System Bold" size="20.0" />
+			</font>
+		</Label>
+		<Label fx:id="chapterLabel" alignment="CENTER" layoutX="534.0"
+			layoutY="71.0" prefHeight="50.0" prefWidth="400.0" styleClass="fragenArtenLabels"
+			text="Kapitel">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Label>
+		<ProgressIndicator fx:id="prog" layoutX="1053.0"
+			layoutY="664.0" opacity="0.55" prefHeight="103.0" prefWidth="116.0"
+			progress="0.0" />
+
+		<ListView fx:id="chapterListView" layoutY="1.0" prefHeight="780"
+			prefWidth="300.0" />
+		<Button fx:id="homeButton" layoutX="306.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#homeButtonClicked" styleClass="fragenArtenButtons"
+			text="Home" />
+		<TextField fx:id="answerTextfield1" layoutX="985.0" layoutY="191.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<Label fx:id="checkLabel" layoutX="398.0" layoutY="707.0"
+			prefHeight="21.0" prefWidth="253.0" text="" />
+		<Button fx:id="goButton" layoutX="1010.0" layoutY="148.0"
+			mnemonicParsing="false" onAction="#checkAnswer" prefHeight="31.0"
+			prefWidth="131.0" styleClass="fragenArtenButtons" text="Go" />
+		<TextField fx:id="answerTextfield4" layoutX="985.0" layoutY="340.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<TextField fx:id="answerTextfield2" layoutX="985.0" layoutY="240.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<TextField fx:id="answerTextfield3" layoutX="985.0" layoutY="290.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<TextField fx:id="answerTextfield5" layoutX="985.0" layoutY="390.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<TextField fx:id="answerTextfield6" layoutX="985.0" layoutY="440.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<TextField fx:id="answerTextfield7" layoutX="985.0" layoutY="490.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<TextField fx:id="answerTextfield8" layoutX="985.0" layoutY="540.0"
+			prefHeight="45.0" prefWidth="180.0" />
+		<Label fx:id="questionLabel1" layoutX="337.0" layoutY="191.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1 " wrapText="true" />
+		<Label fx:id="questionLabel2" layoutX="337.0" layoutY="240.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1" wrapText="true" />
+		<Label fx:id="questionLabel3" layoutX="337.0" layoutY="290.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1" wrapText="true" />
+		<Label fx:id="questionLabel4" layoutX="337.0" layoutY="340.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1" wrapText="true" />
+		<Label fx:id="questionLabel5" layoutX="337.0" layoutY="390.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1" wrapText="true" />
+		<Label fx:id="questionLabel6" layoutX="337.0" layoutY="440.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1" wrapText="true" />
+		<Label fx:id="questionLabel7" layoutX="337.0" layoutY="490.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1" wrapText="true" />
+		<ImageView fx:id="logoImage" fitHeight="96.0" fitWidth="92.0"
+			layoutX="344.0" layoutY="39.0" opacity="0.43" pickOnBounds="true"
+			preserveRatio="true" rotate="-6.3">
+			<image>
+				<Image url="@../logo/logo.png" />
+			</image>
+		</ImageView>
+		<Label fx:id="questionLabel8" layoutX="337.0" layoutY="540.0"
+			prefHeight="45.0" prefWidth="581.0" text="Frage/Satz 1" wrapText="true" />
+		<Separator id="seperator" layoutX="296.0" layoutY="1.0"
+			orientation="VERTICAL" prefHeight="780.0" prefWidth="7.0" />
+
+	</children>
+</AnchorPane>

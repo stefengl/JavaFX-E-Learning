@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.*?>
+
+
+<AnchorPane prefHeight="780" prefWidth="1200.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="multipleChoice.MultipleChoiceController">
+	<children>
+		<ProgressIndicator fx:id="prog" layoutX="1053.0"
+			layoutY="664.0" opacity="0.55" prefHeight="103.0" prefWidth="116.0"
+			progress="0.0" />
+
+		<Button fx:id="vorherigeButton" layoutX="642.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#vorherigeButtonClicked"
+			prefHeight="31.0" prefWidth="92.0" styleClass="fragenArtenButtons"
+			text="Vorherige" />
+		<Button fx:id="nächsteButton" layoutX="734.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#nächsteButtonClicked" prefHeight="31.0"
+			prefWidth="92.0" styleClass="fragenArtenButtons" text="Nächste" />
+		<Button fx:id="homeButton" layoutX="306.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#homeButtonClicked" styleClass="fragenArtenButtons"
+			text="Home" />
+		<Label fx:id="subjectLabel" alignment="CENTER" layoutX="534.0"
+			layoutY="21.0" prefHeight="50.0" prefWidth="400.0" styleClass="fragenArtenLabels"
+			text="Fach">
+			<font>
+				<Font name="System Bold" size="20.0" />
+			</font>
+		</Label>
+		<Label fx:id="chapterLabel" alignment="CENTER" layoutX="436.0"
+			layoutY="71.0" prefHeight="50.0" prefWidth="600.0" styleClass="fragenArtenLabels"
+			text="Chapter">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Label>
+		<ImageView fx:id="logoImage" fitHeight="96.0" fitWidth="92.0"
+			layoutX="344.0" layoutY="39.0" opacity="0.43" pickOnBounds="true"
+			preserveRatio="true" rotate="-6.3">
+			<image>
+				<Image url="@../logo/logo.png" />
+			</image>
+		</ImageView>
+		<Label fx:id="questionLabel" styleClass="fragenLabels"
+			alignment="CENTER" layoutX="328.0" layoutY="130.0" prefHeight="161.0"
+			prefWidth="816.0" text="Question" textAlignment="CENTER" wrapText="true" />
+		<ListView fx:id="chapterListView" prefHeight="780" prefWidth="300.0" />
+		<CheckBox fx:id="check" layoutX="337.0" layoutY="334.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<CheckBox fx:id="check1" layoutX="337.0" layoutY="384.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<CheckBox fx:id="check2" layoutX="337.0" layoutY="434.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<CheckBox fx:id="check3" layoutX="337.0" layoutY="484.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<CheckBox fx:id="check4" layoutX="338.0" layoutY="534.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<CheckBox fx:id="check5" layoutX="338.0" layoutY="584.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<CheckBox fx:id="check6" layoutX="337.0" layoutY="634.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<CheckBox fx:id="check7" layoutX="337.0" layoutY="684.0"
+			mnemonicParsing="false" prefHeight="50.0" prefWidth="800.0"
+			text="Antwortmöglichkeit" wrapText="true" />
+		<Separator id="seperator" layoutX="296.0" layoutY="1.0"
+			orientation="VERTICAL" prefHeight="780.0" prefWidth="7.0" />
+
+	</children>
+</AnchorPane>

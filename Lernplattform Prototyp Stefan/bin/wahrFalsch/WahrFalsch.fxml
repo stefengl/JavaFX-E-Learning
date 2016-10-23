@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane prefHeight="780" prefWidth="1200.0"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="wahrFalsch.WahrFalschController">
+	<children>
+		<ImageView fx:id="logoImage" fitHeight="96.0" fitWidth="92.0"
+			layoutX="344.0" layoutY="39.0" opacity="0.43" pickOnBounds="true"
+			preserveRatio="true" rotate="-6.3">
+		</ImageView>
+		<Button fx:id="wahrButton" layoutX="534.0" layoutY="500.0"
+			mnemonicParsing="false" onAction="#checkQuestion" prefHeight="80.0"
+			prefWidth="200.0" styleClass="wahrFalschButtons" text="WAHR" />
+		<Button fx:id="falschButton" layoutX="734.0" layoutY="500.0"
+			mnemonicParsing="false" onAction="#checkQuestion" prefHeight="80.0"
+			prefWidth="200.0" styleClass="wahrFalschButtons" text="FALSCH" />
+		<Button fx:id="vorherigeButton" layoutX="642.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#vorherigeButtonClicked"
+			prefHeight="31.0" prefWidth="92.0" styleClass="fragenArtenButtons"
+			text="Vorherige" />
+		<Button fx:id="nächsteButton" layoutX="734.0" layoutY="735"
+			mnemonicParsing="false" onAction="#nächsteButtonClicked" prefHeight="31.0"
+			prefWidth="92.0" styleClass="fragenArtenButtons" text="Nächste" />
+		<Label fx:id="subjectLabel" alignment="CENTER" layoutX="534.0"
+			layoutY="21.0" prefHeight="50.0" prefWidth="400.0" styleClass="fragenArtenLabels"
+			text="Fach">
+			<font>
+				<Font name="System Bold" size="20.0" />
+			</font>
+		</Label>
+		<Label fx:id="chapterLabel" alignment="CENTER" layoutX="534.0"
+			layoutY="71.0" prefHeight="50.0" prefWidth="400.0" styleClass="fragenArtenLabels"
+			text="Chapter">
+			<font>
+				<Font name="System Bold" size="15.0" />
+			</font>
+		</Label>
+		<Label fx:id="questionLabel" alignment="CENTER" layoutX="397.0"
+			layoutY="200.0" prefHeight="253.0" prefWidth="674.0" styleClass="fragenLabels"
+			text="Question" textAlignment="CENTER" wrapText="true" />
+		<ListView fx:id="chapterListView" layoutY="1.0" prefHeight="780"
+			prefWidth="300.0" />
+		<Button fx:id="homeButton" layoutX="306.0" layoutY="735.0"
+			mnemonicParsing="false" onAction="#homeButtonClicked" styleClass="fragenArtenButtons"
+			text="Home" />
+		<ProgressIndicator fx:id="prog" layoutX="1053.0"
+			layoutY="664.0" opacity="0.55" prefHeight="103.0" prefWidth="116.0"
+			progress="0.0" />
+		<Separator id="seperator" layoutX="296.0" layoutY="1.0"
+			orientation="VERTICAL" prefHeight="780.0" prefWidth="7.0" />
+	</children>
+</AnchorPane>
